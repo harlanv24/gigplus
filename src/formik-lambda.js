@@ -197,7 +197,14 @@ function Contact(props) {
                         margin="normal"
                       />
                       <FormGroup row>
-                      <FormControlLabel control={<Checkbox value="checkedC" />} label="Uncontrolled" />
+                        Please enter your jobs below:
+                      <FormControlLabel control={<Checkbox value="checkedC"/>} label="Uber"/>
+                      <FormControlLabel control={<Checkbox value="checkedC"/>} label="Lyft"/>
+                      <FormControlLabel control={<Checkbox value="checkedC"/>} label="Amazon Flex"/>
+                      <FormControlLabel control={<Checkbox value="checkedC"/>} label="DoorDash"/>
+                      <FormControlLabel control={<Checkbox value="checkedC"/>} label="GrubHub"/>
+                      <FormControlLabel control={<Checkbox value="checkedC"/>} label="UberEats"/>
+                      <FormControlLabel control={<Checkbox value="checkedC"/>} label="Other"/>
                       </FormGroup>
                       <DialogActions>
                         <Button
