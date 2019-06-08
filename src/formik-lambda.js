@@ -196,9 +196,8 @@ function Contact(props) {
                         helperText={(errors.email && touched.email) && errors.email}
                         margin="normal"
                       />
-                      <FormGroup row>
+                      <FormGroup column>
                         Please enter your jobs below:
-                        <p></p>
                       <FormControlLabel control={<Checkbox value="checkedC"/>} label="Uber"/>
                       <FormControlLabel control={<Checkbox value="checkedC"/>} label="Lyft"/>
                       <FormControlLabel control={<Checkbox value="checkedC"/>} label="Amazon Flex"/>
