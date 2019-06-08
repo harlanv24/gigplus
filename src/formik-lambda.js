@@ -182,7 +182,6 @@ function Contact(props) {
                         helperText={(errors.name && touched.name) && errors.name}
                         margin="normal"
                       />
-
                       <TextField
                         error={errors.email && touched.email}
                         label="email"
@@ -194,17 +193,7 @@ function Contact(props) {
                         helperText={(errors.email && touched.email) && errors.email}
                         margin="normal"
                       />
-
-                      <TextField
-                        label="job list"
-                        name="jobList"
-                        className={classes.textField}
-                        value={values.jobList}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        helperText={(errors.jobList && touched.jobList) && errors.jobList}
-                        margin="normal"
-                      />
+                      <FormControlLabel control={<Checkbox value="checkedC" />} label="Uncontrolled" />
                       <DialogActions>
                         <Button
                           type="button"
