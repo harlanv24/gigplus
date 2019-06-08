@@ -69,8 +69,7 @@ function Contact(props) {
         </div>
         {/* End hero unit */}
         <div className={classNames(classes.layout, classes.cardGrid)}>          
-          <Grid container spacing={40} justify="center">
-            <Grid container direction="row" alignItems="center">
+            <Grid container direction="row" justify="center" alignItems="center">
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -87,11 +86,9 @@ function Contact(props) {
                   </CardContent>
                 </Card>
               </Grid>
-          </Grid>
         </div>  
         <div className={classNames(classes.layout, classes.cardGrid)}>          
-          <Grid container spacing={40}>
-              <Grid container direction="column" alignItems="center">
+              <Grid container direction="column" justify="center" alignItems="center">
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -108,10 +105,8 @@ function Contact(props) {
                   </CardContent>
                 </Card>
               </Grid>
-          </Grid>
         </div>
         <div className={classNames(classes.layout, classes.cardGrid)}>          
-          <Grid container spacing={40}>
               <Grid container direction="column" justify="center" alignItems="center">
                 <Card className={classes.card}>
                   <CardMedia
@@ -129,7 +124,6 @@ function Contact(props) {
                   </CardContent>
                 </Card>
               </Grid>
-          </Grid>
         </div>    
       
       <Dialog
