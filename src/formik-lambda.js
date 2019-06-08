@@ -204,7 +204,16 @@ function Contact(props) {
                       <FormControlLabel control={<Checkbox value="checkedC"/>} label="DoorDash"/>
                       <FormControlLabel control={<Checkbox value="checkedC"/>} label="GrubHub"/>
                       <FormControlLabel control={<Checkbox value="checkedC"/>} label="UberEats"/>
-                      <FormControlLabel control={<Checkbox value="checkedC"/>} label="Other"/>
+                      <TextField
+                        label="Other Jobs:"
+                        name="otherJob"
+                        className={classes.textField}
+                        value={values.jobList}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        helperText={(errors.jobList && touched.jobList) && errors.jobList}
+                        margin="normal"
+                      />
                       </FormGroup>
                       <DialogActions>
                         <Button
