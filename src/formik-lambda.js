@@ -198,6 +198,7 @@ function Contact(props) {
                       />
                       <FormGroup row>
                         Please enter your jobs below:
+                        <p></p>
                       <FormControlLabel control={<Checkbox value="checkedC"/>} label="Uber"/>
                       <FormControlLabel control={<Checkbox value="checkedC"/>} label="Lyft"/>
                       <FormControlLabel control={<Checkbox value="checkedC"/>} label="Amazon Flex"/>
