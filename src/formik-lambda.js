@@ -13,6 +13,8 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import axios from 'axios';
@@ -194,7 +196,9 @@ function Contact(props) {
                         helperText={(errors.email && touched.email) && errors.email}
                         margin="normal"
                       />
+                      <FormGroup row>
                       <FormControlLabel control={<Checkbox value="checkedC" />} label="Uncontrolled" />
+                      </FormGroup>
                       <DialogActions>
                         <Button
                           type="button"
