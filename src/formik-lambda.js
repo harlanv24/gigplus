@@ -69,8 +69,8 @@ function Contact(props) {
         </div>
         {/* End hero unit */}
         <div className={classNames(classes.layout, classes.cardGrid)}>
-          <Grid container spacing={80} direction = "column">
-            <Grid justify="center" alignItems="center">
+          <Grid container spacing={80} direction = "column" justify="center" alignItems="center">
+            <Grid item xs={12} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -78,18 +78,16 @@ function Contact(props) {
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
-                    <Grid item xs = {6}>
                     <Typography gutterBottom variant="h5" component="h2" align = "center">
                     Track Hours
                     </Typography>
                     <Typography align = "center">
                       Don't let your hours go to waste.  Compile a digital record of your work hours to contribute towards employee benefits.
                     </Typography>
-                    </Grid>
                   </CardContent>
                 </Card>
               </Grid>        
-              <Grid justify="center" alignItems="center">
+              <Grid>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -97,18 +95,16 @@ function Contact(props) {
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
-                  <Grid item xs = {6}>
                     <Typography gutterBottom variant="h5" component="h2" align = "center">
                     Optimize Job Selection
                     </Typography>
                     <Typography align = "center">
                       Everyone works differently.  Set preferences for the types of gigs you're looking for and we'll help find the best fits.
                     </Typography>
-                    </Grid>
                   </CardContent>
                 </Card>
               </Grid>               
-              <Grid justify="center" alignItems="center">
+              <Grid>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -116,14 +112,12 @@ function Contact(props) {
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
-                  <Grid item xs = {6}>
                     <Typography gutterBottom variant="h5" component="h2" align = "center">
                     Create a Universal Profile
                     </Typography>
                     <Typography align = "center">
                       Let people know who you are. Keep all your ratings, reviews, and work history in one place across multiple platforms.
                     </Typography>
-                    </Grid>
                   </CardContent>
                 </Card>
               </Grid>
