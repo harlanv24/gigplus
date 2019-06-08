@@ -58,7 +58,7 @@ function Contact(props) {
                 </Typography>
                 <div className={classes.heroButtons}>
                     <Grid container spacing={16} justify="center">
-                        <Grid item xs>
+                        <Grid item>
                             <Button variant="outlined" color="primary" onClick={handleClickOpen}>
                                 Sign Up Now
                             </Button>
@@ -69,8 +69,8 @@ function Contact(props) {
         </div>
         {/* End hero unit */}
         <div className={classNames(classes.layout, classes.cardGrid)}>
-          <Grid container spacing={80} direction = "column" justify="center" alignItems="center">
-            <Grid item xs={12} sm={6}>
+          <Grid container spacing={100} direction = "column" justify="center" alignItems="center">
+            <Grid>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
